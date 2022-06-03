@@ -1,0 +1,41 @@
+<style>
+    body{
+       margin-top: 30%;
+       padding: 0;
+       background: url(static/img/bgg.jpg);
+       background-size: cover;
+       background-position: center;
+       font-family: sans-serif;
+        }
+   .login{
+       width: 450px;
+       height: 350px;
+       background: whitesmoke;
+       top: 50%;
+       left: 50%;
+       position: absolute;
+       transform: translate(-50%,-50%);
+       box-sizing: border-box;
+       border-radius: 10%;
+       padding: 10px 20px;
+   }
+   .login center{
+       padding-top: 30%;
+       font-size: xx-large;
+       color: rgb(19, 23, 248);
+       font-weight: bold;
+   }
+   .login h1{
+       text-align: center;
+       font-size: xx-large;
+       color: rgb(250, 14, 26);
+       font-weight: bold;
+   }
+   
+</style><div class="login">
+<form action="" method="POST">
+    <center>Classification Is :<br></center>
+    {% csrf_token %}
+   <h1>{{result}}</h1>
+</form>
+</div>
